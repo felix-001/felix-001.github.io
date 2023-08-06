@@ -42,3 +42,14 @@ border: lpx solid black; font-family: Charcoal, sans-serif;}
 ```
 p.warning { font-weight: bold; }
 ```
+#### 多类选择器
+
+```
+<p class="urgent warning"> hello world </p>
+```
+
+```
+.warning { font-weight: bold;}
+.urgent { font-style: italic; }
+.warning.urgent { bcakground: silver; }
+```
