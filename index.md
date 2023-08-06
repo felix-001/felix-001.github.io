@@ -1,4 +1,3 @@
-[TOC]
 
 # CSS权威指南笔记
 ## 选择器
@@ -53,3 +52,26 @@ p.warning { font-weight: bold; }
 .urgent { font-style: italic; }
 .warning.urgent { bcakground: silver; }
 ```
+#### ID选择器
+```
+<p id="lead-para"> hello world </> 
+```
+
+```
+#lead-para { font-weight: bold; }
+```
+id选择器只能应用于一个元素，如果多个元素有相同的id会出错
+
+### 属性选择器
+#### 简单属性选择器
+
+```
+<h1 class="hoopla"> hello </h1>
+<h1 class="severe"> world </h1>
+```
+
+选择有class属性(值不限)的所有h1元素
+```
+h1[class] { color: silver; }
+```
+
