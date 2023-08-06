@@ -1,3 +1,5 @@
+[TOC]
+
 # CSS权威指南笔记
 ## 选择器
 ### css语法
@@ -8,3 +10,35 @@
 h1 {color: gray;}
 ```
 ### 选择器分组
+```
+h1, p {color: gray;}
+```
+### 通配选择器
+```
+* {color: red;}
+```
+
+### 声明分组
+```
+h1 {
+  font: 18px Helvetica;
+  color: purple;
+  background: aqua;
+}
+```
+
+### 结合选择器和声明分组
+```
+hl, h2, h3, h4, h5, h6 {color: gray; background: white; padding: 0.5em;
+border: lpx solid black; font-family: Charcoal, sans-serif;}
+```
+
+### 类选择器和ID选择器
+#### 类选择器
+```
+*.warning { font-weight: bold; }
+```
+匹配class属性包含warning的所有p元素
+```
+p.warning { font-weight: bold; }
+```
