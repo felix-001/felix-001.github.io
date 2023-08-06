@@ -74,4 +74,19 @@ id选择器只能应用于一个元素，如果多个元素有相同的id会出�
 ```
 h1[class] { color: silver; }
 ```
+可以根据多个属性进行选择
+```
+a[href][title] { font-weight: bold; }
+```
+第一个链接变粗体，第二个和第3个不变
+```
+<a href="http://www.w3.org/" title="W3C Home">W3C</a><br />
+<a href="http://www.webstandards.org">Standards Info</a><br />
+<a title="Not a link">dead.letter</a>
+```
 
+#### 根据具体属性值选择
+假设想将指向 Web 服务器上某个特定文档的超链接变成粗体，可以写作:
+```
+a[href="http://www.css-discuss,org/about .html"] (font-weight: bold;}
+```
